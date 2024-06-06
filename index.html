@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoChess Academy Parent Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GoChess Academy Parent Survey</h1>
+            <p>Help us improve by sharing your feedback!</p>
+        </header>
+        <form action="submit-survey" method="post">
+            <div class="form-group">
+                <label>1. Which co-curricular activities would you be interested in for your child? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="activities" value="Art and Craft"> Art and Craft</label>
+                    <label><input type="checkbox" name="activities" value="Music"> Music (Instrumental/Vocal)</label>
+                    <label><input type="checkbox" name="activities" value="Dance"> Dance</label>
+                    <label><input type="checkbox" name="activities" value="Coding and Robotics"> Coding and Robotics</label>
+                    <label><input type="checkbox" name="activities" value="Language Classes"> Language Classes</label>
+                    <label><input type="checkbox" name="activities" value="Public Speaking and Debating"> Public Speaking and Debating</label>
+                    <label><input type="checkbox" name="activities" value="Science Experiments"> Science Experiments</label>
+                    <label><input type="checkbox" name="activities" value="Physical Fitness and Yoga"> Physical Fitness and Yoga</label>
+                    <label><input type="checkbox" name="activities" value="Other"> Other (Please specify): <input type="text" name="other_activity"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>2. How often would you like these activities to be conducted?</label>
+                <select name="frequency">
+                    <option value="Once a week">Once a week</option>
+                    <option value="Twice a week">Twice a week</option>
+                    <option value="Three times a week">Three times a week</option>
+                    <option value="Other">Other (Please specify): <input type="text" name="other_frequency"></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>3. What time of day would be most convenient for your child to participate in these activities? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="time" value="Morning"> Morning</label>
+                    <label><input type="checkbox" name="time" value="Afternoon"> Afternoon</label>
+                    <label><input type="checkbox" name="time" value="Evening"> Evening</label>
+                    <label><input type="checkbox" name="time" value="Weekends"> Weekends</label>
+                    <label><input type="checkbox" name="time" value="Other"> Other (Please specify): <input type="text" name="other_time"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>4. Do you have any specific goals or expectations for these co-curricular activities?</label>
+                <input type="text" name="goals">
+            </div>
+
+            <div class="form-group">
+                <label>5. How satisfied are you with the current services provided by GoChess Academy?</label>
+                <select name="satisfaction">
+                    <option value="Very satisfied">Very satisfied</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Dissatisfied">Dissatisfied</option>
+                    <option value="Very dissatisfied">Very dissatisfied</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>6. Do you have any suggestions for improving our current services or introducing new activities?</label>
+                <input type="text" name="suggestions">
+            </div>
+
+            <div class="form-group">
+                <label>7. Would you be willing to pay an additional fee for these co-curricular activities?</label>
+                <select name="additional_fee">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Maybe">Maybe (Depends on the activity and fee)</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
